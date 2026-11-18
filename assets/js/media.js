@@ -1,4 +1,4 @@
-// Hero lens video and ending marquee: play only with motion allowed and on screen; a pause button for both.
+// Hero lens video and ending marquee: play only with motion allowed and on screen; a pause button for the video.
 // The paused choice is kept in sessionStorage for this tab only.
 const store = {
   get: k => { try { return sessionStorage.getItem(k) === "1"; } catch { return false; } },
@@ -45,13 +45,9 @@ export function initMedia(motion) {
     bindToggle(vBtn, paused, p => { paused = p; if (motion) store.set("kivora-video-paused", p); sync(); });
   }
 
+  // marquee: runs only while on screen; it pauses on hover and keyboard focus (CSS)
   const marquee = document.querySelector("[data-marquee]");
-  const mBtn = document.querySelector("[data-marquee-toggle]");
-  if (marquee && mBtn && motion) {
-    let paused = store.get("kivora-marquee-paused");
-    let visible = false;
-    const sync = () => marquee.classList.toggle("is-paused", paused || !visible);
-    new IntersectionObserver(([e]) => { visible = e.isIntersecting; sync(); }).observe(marquee);
-    bindToggle(mBtn, paused, p => { paused = p; store.set("kivora-marquee-paused", p); sync(); });
+  if (marquee && motion) {
+    new IntersectionObserver(([e]) => marquee.classList.toggle("is-paused", !e.isIntersecting)).observe(marquee);
   }
 }

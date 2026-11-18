@@ -23,9 +23,7 @@
     "footerContactLabel": "Kontakt",
     "breadcrumbLabel": "Brotkrümelnavigation",
     "videoPause": "Video anhalten",
-    "videoPlay": "Video abspielen",
-    "marqueePause": "Laufband anhalten",
-    "marqueePlay": "Laufband starten"
+    "videoPlay": "Video abspielen"
   },
   "nav": [
     { "key": "leistungen", "label": "Leistungen" },

@@ -338,7 +338,6 @@ function startPage() {
   <p class="ending__word" aria-hidden="true">KIVORA</p>
   <div class="marquee" data-marquee>
     <a class="marquee__link" href="${R}kontakt/"><span class="marquee__track"><span>${esc(E.marquee)} →</span>${Array.from({ length: 5 }, () => `<span aria-hidden="true">${esc(E.marquee)} →</span>`).join("")}</span></a>
-    <button class="media-toggle marquee__toggle" type="button" aria-pressed="false" data-marquee-toggle data-label-pause="${esc(S.marqueePause)}" data-label-play="${esc(S.marqueePlay)}" hidden>${esc(S.marqueePause)}</button>
   </div>
 </section>`;
   return page("start", C.seo.start, body, { active: "", bodyClass: "page-start", extraHead: preload });

@@ -404,11 +404,10 @@ main { display: block; }
 .marquee__link { display: block; color: var(--white); text-decoration: none; padding: var(--s5) 0; }
 .marquee__track { display: flex; width: max-content; gap: var(--s8); padding-right: var(--s8); font: 600 clamp(1.5rem, 1rem + 2.5vw, 3rem)/1 var(--f-display); text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap; hyphens: manual; }
 .motion .marquee__track { animation: marquee 28s linear infinite; }
+.marquee__link:focus-visible .marquee__track { animation-play-state: paused; }
 .marquee.is-paused .marquee__track { animation-play-state: paused; }
 @media (hover: hover) and (pointer: fine) { .marquee__link:hover .marquee__track { animation-play-state: paused; } .marquee__link:hover span { text-decoration: underline; text-decoration-thickness: 3px; } }
 @keyframes marquee { to { transform: translateX(-50%); } }
-.marquee__toggle { right: var(--gutter); top: 50%; translate: 0 -50%; background: var(--bg); }
-@media (max-width: 767px) { .marquee__toggle { position: static; translate: none; margin: var(--s3) var(--gutter); } }
 
 /* ------------------------------------------------------------------ footer */
 .site-foot { position: relative; z-index: 2; background: var(--bg); border-top: 1px solid var(--line); padding: var(--s9) var(--gutter) var(--s7); }
