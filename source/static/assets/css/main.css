@@ -107,7 +107,7 @@ p { max-width: 68ch; text-wrap: pretty; }
 .ticks li { position: relative; padding-left: 28px; }
 .ticks li::before { content: ""; position: absolute; left: 4px; top: 0.62em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--glow); }
 .chips { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s5) 0; }
-.chip { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 18px; border-radius: var(--r-pill); border: 1px solid var(--line-strong); background: transparent; color: var(--text); font-size: 0.9375rem; font-weight: 500; cursor: pointer; transition: border-color 200ms var(--ease-out), background-color 200ms var(--ease-out), color 200ms var(--ease-out); }
+.chip { flex: none; white-space: nowrap; hyphens: manual; -webkit-hyphens: manual; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 18px; border-radius: var(--r-pill); border: 1px solid var(--line-strong); background: transparent; color: var(--text); font-size: 0.9375rem; font-weight: 500; cursor: pointer; transition: border-color 200ms var(--ease-out), background-color 200ms var(--ease-out), color 200ms var(--ease-out); }
 .chip[aria-pressed="true"], .chip--check:has(input:checked) { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
 .chip[aria-pressed="true"]::before, .chip--check:has(input:checked) span::before { content: "✓"; margin-right: 4px; }
 @media (hover: hover) and (pointer: fine) { .chip:hover { border-color: var(--accent); } }
@@ -212,14 +212,14 @@ main { display: block; }
   .hero__toggle { bottom: var(--s5); right: 50%; translate: 50% 0; font-size: 0.8125rem; }
 }
 
-/* ------------------------------------------------------------------ act stages (pinned only with .motion) */
+/* ------------------------------------------------------------------ act stages (pinned only with .scenes: motion allowed and min-width 1024px) */
 /* layers for everything the scroll score moves exist from the start, so a scene never waits for a new layer to be rasterised on its first frame */
-.motion .hero.is-near [data-plane="symbol"], .motion .hero.is-near [data-plane="text"], .motion .services.is-near .svc-card:not(:first-child), .motion .process.is-near .process__fill, .motion .work.is-near .reel, .motion .work.is-near .work__launcher, .motion .formats.is-near .format { will-change: transform, opacity; }
+.scenes .hero.is-near [data-plane="symbol"], .scenes .hero.is-near [data-plane="text"], .scenes .services.is-near .svc-card:not(:first-child), .scenes .process.is-near .process__fill, .scenes .work.is-near .reel, .scenes .work.is-near .work__launcher, .scenes .formats.is-near .format { will-change: transform, opacity; }
 /* only sections within about one viewport of the screen carry will-change: bounded layer memory (Firefox budget) */
 .act { position: relative; }
 .act__stage { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; padding-block: var(--section); }
-.motion .act[data-act="stack"], .motion .act[data-act="steps"], .motion .act[data-act="burst"], .motion .act[data-act="gallery"] { height: var(--act-h); }
-.motion .act[data-act] > .act__stage { position: sticky; top: 0; height: 100svh; padding-block: calc(var(--head-h) + var(--s6)) var(--s6); overflow: clip; }
+.scenes .act[data-act="stack"], .scenes .act[data-act="steps"], .scenes .act[data-act="burst"], .scenes .act[data-act="gallery"] { height: var(--act-h); }
+.scenes .act[data-act] > .act__stage { position: sticky; top: 0; height: 100svh; padding-block: calc(var(--head-h) + var(--s6)) var(--s6); overflow: clip; }
 
 /* act 2: services stack */
 .services { --act-h: 180svh; }
@@ -234,13 +234,8 @@ main { display: block; }
 .svc-card::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: var(--bg); opacity: var(--dim, 0); pointer-events: none; }
 @media (min-width: 1024px) {
   .services__stage { grid-template-columns: 5fr 7fr; align-items: center; }
-  .motion .services__cards { position: relative; height: min(460px, 62svh); }
-  .motion .services .svc-card { position: absolute; inset: 0; margin-left: calc(var(--i) * 28px); margin-top: calc(var(--i) * 20px); box-shadow: 0 -20px 60px -30px var(--bg); }
-}
-@media (max-width: 1023px) {
-  .motion .services { height: auto; }
-  .motion .services > .act__stage { position: static; height: auto; padding-block: var(--section); overflow: visible; }
-  .motion .services .svc-card { position: sticky; top: calc(var(--head-h) + 16px + var(--i) * 14px); }
+  .scenes .services__cards { position: relative; height: min(460px, 62svh); }
+  .scenes .services .svc-card { position: absolute; inset: 0; margin-left: calc(var(--i) * 28px); margin-top: calc(var(--i) * 20px); box-shadow: 0 -20px 60px -30px var(--bg); }
 }
 .svc-vis { min-height: 120px; display: flex; align-items: center; }
 .svc-vis--plan { gap: var(--s2); flex-wrap: wrap; }
@@ -272,24 +267,20 @@ main { display: block; }
 .step.is-on::before { background: var(--accent); box-shadow: 0 0 14px var(--glow); }
 .step__n { font-size: 0.875rem; color: var(--accent); letter-spacing: 0.04em; }
 .step p { color: var(--text-2); }
-.motion .step { opacity: var(--o, 1); transition: opacity 300ms var(--ease-out); }
+.scenes .step { opacity: var(--o, 1); transition: opacity 300ms var(--ease-out); }
 @media (min-width: 1024px) {
   .process__stage { grid-template-columns: 5fr 7fr; align-items: center; }
   /* clean rolling numerals: solid, tabular, one line visible through a clipped window, brand dot after the number */
-  .motion .process__num { display: flex; align-items: flex-end; font-size: clamp(7rem, 15vw, 15rem); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--text); }
+  .scenes .process__num { display: flex; align-items: flex-end; font-size: clamp(7rem, 15vw, 15rem); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--text); }
   .process__window { display: block; height: 1em; overflow: clip; }
   .process__roll { display: flex; flex-direction: column; transition: transform 600ms var(--ease-out); }
   .process__roll span { display: block; height: 1em; line-height: 1; }
   .process__num .dot { line-height: 1; margin-left: -0.04em; }
-  .motion .process__stage { padding-bottom: 12svh; }
-}
-@media (max-width: 1023px) {
-  .motion .process { height: auto; }
-  .motion .process > .act__stage { position: static; height: auto; overflow: visible; padding-block: var(--section); }
+  .scenes .process__stage { padding-bottom: 12svh; }
 }
 
 /* act 4: work (peak) */
-.work { --act-h: 360svh; z-index: 1; } /* 260 for the act + 100 overlapped by the act 5 portal */
+.work { --act-h: 360svh; z-index: 1; } /* act 5 starts 200svh before the end: its clipped lead-in runs under the wall, the last 100 are the portal */
 .work__stage { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s6); }
 .work__head .h2 { font-size: clamp(2rem, 0.8rem + 2.6vw, 3.75rem); }
 .work__head .lead { max-width: 26em; }
@@ -311,18 +302,9 @@ main { display: block; }
 @media (min-width: 1024px) {
   .work__stage { grid-template-columns: 5fr 7fr; align-items: start; }
   .wall { grid-template-columns: repeat(4, 1fr); }
-  .motion .work__head { position: relative; z-index: 3; align-self: center; }
-  .motion .wall { position: relative; margin-top: calc(-1 * var(--s6)); }
-  .motion .work__launcher { display: block; position: absolute; z-index: 4; left: calc(5 / 12 * 100% + 7 / 24 * 100%); top: 50%; width: 140px; translate: -50% -50%; pointer-events: none; }
-}
-@media (max-width: 1023px) {
-  .motion .work { --act-h: 270svh; }
-  .motion .work__stage { grid-template-rows: auto 1fr; gap: var(--s4); padding-top: calc(var(--head-h) + var(--s4)); }
-  .motion .work__head .lead { font-size: 1rem; }
-  .motion .work__head .chips { flex-wrap: nowrap; overflow-x: auto; margin: var(--s3) calc(-1 * var(--gutter)); padding: 0 var(--gutter) 4px; scrollbar-width: none; }
-  .motion .work__head .link-arrow { display: none; }
-  .motion .wall { min-height: 0; overflow: clip; -webkit-mask: linear-gradient(transparent, var(--bg) 28px); mask: linear-gradient(transparent, var(--bg) 28px); padding-top: 28px; }
-  .motion .work__launcher { display: block; position: absolute; z-index: 4; left: 50%; top: 62%; width: 96px; translate: -50% -50%; pointer-events: none; }
+  .scenes .work__head { position: relative; z-index: 3; align-self: center; }
+  .scenes .wall { position: relative; margin-top: calc(-1 * var(--s6)); }
+  .scenes .work__launcher { display: block; position: absolute; z-index: 4; left: calc(5 / 12 * 100% + 7 / 24 * 100%); top: 50%; width: 140px; translate: -50% -50%; pointer-events: none; }
 }
 
 /* act 5: founding (portal) */
@@ -332,11 +314,10 @@ main { display: block; }
 .founding__ko { width: min(70vw, 460px); justify-self: center; }
 @media (min-width: 900px) { .founding__inner { grid-template-columns: 7fr 5fr; } }
 .portal-ring { display: none; }
-.motion .founding { margin-top: -100svh; height: 170svh; }
+.scenes .founding { position: relative; z-index: 2; margin-top: -200svh; height: 270svh; } /* its stage sticks by CSS alone, so it never trails the scroll */
 .founding .h2 { font-size: clamp(2rem, 1rem + 3.2vw, 4.25rem); }
-@media (max-width: 1023px) { .motion .founding { margin-top: -70svh; height: 150svh; } }
-.motion .founding__stage { position: sticky; top: 0; height: 100svh; clip-path: circle(var(--r, 0px) at var(--ox, 50%) var(--oy, 50%)); }
-.motion .portal-ring { display: block; position: fixed; z-index: 3; left: var(--ox, 50%); top: var(--oy, 50%); width: 100vmax; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; background: var(--grad); -webkit-mask: radial-gradient(circle, transparent 61.5%, var(--bg) 62.5%); mask: radial-gradient(circle, transparent 61.5%, var(--bg) 62.5%); pointer-events: none; opacity: 0; transform: scale(0.01); }
+.scenes .founding__stage { position: sticky; top: 0; height: 100svh; clip-path: circle(var(--r, 0px) at var(--ox, 50%) var(--oy, 50%)); }
+.scenes .portal-ring { display: block; position: fixed; z-index: 3; left: var(--ox, 50%); top: var(--oy, 50%); width: 100vmax; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; background: var(--grad); -webkit-mask: radial-gradient(circle, transparent 61.5%, var(--bg) 62.5%); mask: radial-gradient(circle, transparent 61.5%, var(--bg) 62.5%); pointer-events: none; opacity: 0; transform: scale(0.01); }
 
 
 /* act 6: formats */
@@ -356,12 +337,8 @@ main { display: block; }
 @media (min-width: 1024px) {
   .formats__head { grid-template-columns: 1fr auto; }
   .format { width: clamp(420px, 36vw, 560px); grid-template-columns: minmax(180px, min(44%, 36svh)) minmax(0, 1fr); align-items: end; gap: var(--s5); }
-  .motion .formats__viewport { overflow: visible; margin: 0; padding: 0; }
-  .motion .formats__stage { align-content: center; }
-}
-@media (max-width: 1023px) {
-  .motion .formats { height: auto; }
-  .motion .formats > .act__stage { position: static; height: auto; overflow: visible; padding-block: var(--section); }
+  .scenes .formats__viewport { overflow: visible; margin: 0; padding: 0; }
+  .scenes .formats__stage { align-content: center; }
 }
 
 /* phone mockups */

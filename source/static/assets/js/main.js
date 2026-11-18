@@ -11,6 +11,7 @@ initFilter();
 initForm();
 // marker for the scroll-craft screenshot harness (verification only, no styling attached)
 document.documentElement.classList.add("sc-ready");
-if (motion && document.querySelector("[data-act]")) {
+// pinned scenes only on wide screens; phones and tablets get the calm static layout
+if (document.documentElement.classList.contains("scenes") && document.querySelector("[data-act]")) {
   import("./scenes.js").then(m => m.initScenes());
 }

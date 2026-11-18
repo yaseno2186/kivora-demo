@@ -97,7 +97,7 @@ function burst() {
     travel = Math.max(cardH * 0.8, wall.scrollHeight + cardH * 0.5 - visible);
     shared.cols = cols;
     // act 5 overlaps the last part of this pin (portal); the burst + wall timeline ends before that
-    const overlap = view.h * (desktop.matches ? 1 : 0.7);
+    const overlap = view.h; // the last 100svh of this pin are the act 5 portal (its clipped lead-in before that is invisible)
     pEnd = clamp((el.offsetHeight - view.h - overlap) / Math.max(el.offsetHeight - view.h, 1), 0.3, 1);
   };
   track(el, raw => {
@@ -123,20 +123,19 @@ function burst() {
 function portal() {
   const el = $('[data-act="portal"]'); if (!el) return;
   const stage = $("[data-portal-stage]", el), ring = $("[data-portal-ring]", el);
-  let ox = 0, oy = 0, rMax = 0, base = 1, mobile = false;
+  let ox = 0, oy = 0, rMax = 0, base = 1;
   const measure = () => {
-    mobile = !desktop.matches;
-    ox = mobile ? view.w / 2 : shared.ox || view.w / 2;
-    oy = mobile ? view.h : view.h / 2;
+    ox = shared.ox || view.w / 2;
+    oy = view.h / 2;
     rMax = Math.hypot(Math.max(ox, view.w - ox), Math.max(oy, view.h - oy)) + 24;
     base = Math.max(view.w, view.h);
     ring.style.setProperty("--ox", ox + "px"); ring.style.setProperty("--oy", oy + "px");
   };
   track(el, (_, a) => {
-    const r = a.top - view.y; // section top in viewport
-    put(stage, "transform", r > 0 ? `translate3d(0, ${r1(-r)}px, 0)` : "");
-    const span = view.h * (mobile ? 0.7 : 1);
-    const q = clamp((view.h - r) / span);
+    // the stage is sticky (CSS), so nothing here moves it: the circle opens while the section top
+    // travels from the viewport top (r = 0) to one viewport above it (r = -vh)
+    const r = a.top - view.y;
+    const q = clamp(-r / view.h);
     if (q >= 1) { put(stage, "clipPath", "none"); put(ring, "opacity", "0"); return; }
     const R = r1(easeInOut(q) * rMax);
     put(stage, "clipPath", `circle(${R}px at ${r1(ox)}px ${r1(oy)}px)`);

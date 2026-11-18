@@ -97,7 +97,7 @@ ${key === "404" ? `<base href="${ROOT}">\n` : ""}<title>${esc(seo.title)}</title
 ${extra}<link rel="preload" href="${R}assets/fonts/cal-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${R}assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${R}assets/css/main.css">
-<script>document.documentElement.classList.add("js");if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("motion")</script>
+<script>document.documentElement.classList.add("js");var d=document.documentElement,m=matchMedia("(min-width: 1024px)");if(!matchMedia("(prefers-reduced-motion: reduce)").matches){d.classList.add("motion");d.classList.toggle("scenes",m.matches);m.addEventListener("change",function(e){d.classList.toggle("scenes",e.matches)})}</script>
 <script type="module" src="${R}assets/js/main.js"></script>
 ${jsonld(key, seo.crumbs)}
 </head>`;
