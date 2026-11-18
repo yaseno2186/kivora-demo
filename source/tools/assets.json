@@ -1,0 +1,218 @@
+{
+ "lens": {
+  "cx": 67.169,
+  "cy": 50.0,
+  "d": 38.181
+ },
+ "ko-3d-symbol": {
+  "w": [
+   640,
+   1000,
+   1600
+  ],
+  "ratio": 0.7903402854006586,
+  "h_at_max": 1265
+ },
+ "ko-3d-symbol-schraeg": {
+  "w": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": 0.832,
+  "h_at_max": 998
+ },
+ "ko-ring-portal": {
+  "w": [
+   800,
+   1600
+  ],
+  "ratio": 1.0,
+  "h_at_max": 1600
+ },
+ "hero-licht-vorn": {
+  "w": [
+   1600,
+   2400
+  ],
+  "ratio": 0.5625,
+  "h_at_max": 1350
+ },
+ "hero-licht-vorn-mobil": {
+  "w": [
+   720,
+   1080
+  ],
+  "ratio": 1.7777777777777777,
+  "h_at_max": 1920
+ },
+ "o-linse-poster": {
+  "w": [
+   480,
+   720
+  ],
+  "ratio": 1.0,
+  "h_at_max": 720
+ },
+ "reel-cafe-latte-art": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7784552845528456,
+  "h_at_max": 1280
+ },
+ "reel-serum-flasche": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7781541066892463,
+  "h_at_max": 1280
+ },
+ "reel-mode-strasse": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7784552845528456,
+  "h_at_max": 1280
+ },
+ "reel-fahrrad-nacht": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7780952380952382,
+  "h_at_max": 1280
+ },
+ "reel-fitness-hantel": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7784552845528456,
+  "h_at_max": 1280
+ },
+ "reel-haende-smartphone": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7781541066892463,
+  "h_at_max": 1280
+ },
+ "reel-ringlicht-studio": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7781541066892463,
+  "h_at_max": 1280
+ },
+ "reel-hochhaus-nacht": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7781541066892463,
+  "h_at_max": 1280
+ },
+ "reel-creator-gimbal": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7780952380952382,
+  "h_at_max": 1280
+ },
+ "reel-kamera-monitor": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7781541066892463,
+  "h_at_max": 1280
+ },
+ "reel-lichtlinie": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.777246653919694,
+  "h_at_max": 1280
+ },
+ "reel-lichtkurven": {
+  "w": [
+   360,
+   540,
+   720
+  ],
+  "ratio": 1.7781541066892463,
+  "h_at_max": 1280
+ },
+ "konzept-nordlicht-cafe": {
+  "w": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": 1.25,
+  "h_at_max": 1500
+ },
+ "konzept-velura-skin": {
+  "w": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": 1.25,
+  "h_at_max": 1500
+ },
+ "konzept-atelier-mira": {
+  "w": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": 1.25,
+  "h_at_max": 1500
+ },
+ "konzept-kanto-bikes": {
+  "w": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": 1.25,
+  "h_at_max": 1500
+ },
+ "konzept-studio-wellenform": {
+  "w": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": 1.25,
+  "h_at_max": 1500
+ },
+ "licht-textur-ende": {
+  "w": [
+   960,
+   1400
+  ],
+  "ratio": 0.625,
+  "h_at_max": 875
+ }
+}

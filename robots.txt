@@ -1,0 +1,3 @@
+# Demo-Website (Konzept von Armsin): nicht indexieren.
+User-agent: *
+Disallow: /

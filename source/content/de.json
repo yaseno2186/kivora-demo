@@ -1,0 +1,349 @@
+{
+  "_info": "Alle sichtbaren Texte der KIVORA Website (Deutsch). Ändern, dann `node tools/build.mjs` ausführen. Für Englisch später: content/en.json mit gleicher Struktur anlegen. [K] = Kunde muss noch bestätigen (siehe plan/PLAN.md P6).",
+  "lang": "de",
+  "site": {
+    "name": "KIVORA",
+    "slogan": "What brands move forward.",
+    "descriptor": "Marketingagentur in Dresden",
+    "offer": "Strategie, Content und Wachstum für Marken.",
+    "email": "hallo@kivora.example",
+    "baseUrl": "https://kivora.example",
+    "city": "Dresden",
+    "region": "Sachsen",
+    "skip": "Zum Inhalt springen",
+    "menuOpen": "Menü",
+    "menuClose": "Schließen",
+    "navLabel": "Hauptnavigation",
+    "homeLabel": "KIVORA Startseite",
+    "cta": "Gespräch anfragen",
+    "demoNote": "Konzept-Website von Armsin",
+    "socialPlaceholder": "Social-Media-Profile folgen",
+    "footerLegalLabel": "Rechtliches",
+    "footerNavLabel": "Seiten",
+    "footerContactLabel": "Kontakt",
+    "breadcrumbLabel": "Brotkrümelnavigation",
+    "videoPause": "Video anhalten",
+    "videoPlay": "Video abspielen",
+    "marqueePause": "Laufband anhalten",
+    "marqueePlay": "Laufband starten"
+  },
+  "nav": [
+    { "key": "leistungen", "label": "Leistungen" },
+    { "key": "arbeiten", "label": "Arbeiten" },
+    { "key": "ueber-uns", "label": "Über uns" },
+    { "key": "kontakt", "label": "Kontakt" }
+  ],
+  "seo": {
+    "start": { "path": "", "title": "Marketingagentur Dresden · Strategie & Content · KIVORA", "description": "Marketingagentur aus Dresden: KIVORA plant, produziert und misst Kampagnen und Content für Ihre Marke. Jetzt ein Erstgespräch anfragen.", "h1": "Marketingagentur in Dresden · Wir bringen Marken nach vorn.", "index": true },
+    "leistungen": { "path": "leistungen/", "title": "Leistungen: Strategie, Content, Wachstum · KIVORA", "description": "Marketingstrategie, Content und Kampagnen aus einer Hand, von Reels bis zum Markenauftritt, dazu eine monatliche Auswertung. So arbeitet KIVORA.", "h1": "Was wir für Sie tun", "index": true },
+    "arbeiten": { "path": "arbeiten/", "title": "Konzeptprojekte · KIVORA Marketingagentur", "description": "Fünf Konzeptkampagnen für Food, Beauty, Fashion, Mobility und Fitness: Idee, Formate und Ziel-KPIs. So denkt KIVORA über Marketing.", "h1": "Konzepte, die zeigen, wie wir denken", "index": true },
+    "ueber-uns": { "path": "ueber-uns/", "title": "Über KIVORA · junge Marketingagentur aus Dresden", "description": "KIVORA ist eine junge Marketingagentur aus Dresden für Strategie, Content und Wachstum. Warum wir gegründet haben und wie wir mit Marken arbeiten.", "h1": "Warum KIVORA", "index": true },
+    "kontakt": { "path": "kontakt/", "title": "Kontakt · Gespräch anfragen · KIVORA", "description": "Erzählen Sie uns von Ihrer Marke. Wir melden uns innerhalb von zwei Werktagen mit einem Vorschlag für das erste Gespräch. KIVORA, Dresden.", "h1": "Gespräch anfragen", "index": true },
+    "impressum": { "path": "impressum/", "title": "Impressum · KIVORA", "description": "Impressum der KIVORA Marketingagentur aus Dresden. Platzhalter: Die Pflichtangaben folgen, sobald die Firmendaten vom Unternehmen vorliegen.", "h1": "Impressum", "index": false },
+    "datenschutz": { "path": "datenschutz/", "title": "Datenschutz · KIVORA", "description": "Datenschutzhinweise der KIVORA Website. Platzhalter: keine Cookies, keine Tracker, nur sessionStorage. Der vollständige Text folgt vor dem Start.", "h1": "Datenschutz", "index": false },
+    "bildnachweise": { "path": "bildnachweise/", "title": "Bildnachweise · KIVORA", "description": "Bildnachweise der KIVORA Website: alle Fotos und Videos mit Quelle, Urheber und Lizenz, dazu die Grafiken und 3D-Renderings aus eigener Produktion.", "h1": "Bildnachweise", "index": false },
+    "404": { "path": "404.html", "title": "Seite nicht gefunden · KIVORA", "description": "Diese Seite gibt es nicht oder nicht mehr. Zurück zur Startseite der KIVORA Marketingagentur aus Dresden oder direkt ein Gespräch anfragen.", "h1": "Diese Seite ist weitergezogen.", "index": false }
+  },
+  "start": {
+    "hero": {
+      "label": "Marketingagentur in Dresden",
+      "title": "Wir bringen Marken nach vorn.",
+      "cursors": ["Strategie", "Content", "Wachstum"],
+      "symbolAlt": "",
+      "videoLabel": "Kurzes Video: Eine Person filmt nachts die Stadt mit dem Smartphone, zu sehen im O des KIVORA-Symbols."
+    },
+    "services": {
+      "h2": "Was wir für Sie tun",
+      "intro": "Strategie, Content und Wachstum für Ihre Marke: geplant, produziert und gemessen.",
+      "link": "Mehr zu Leistungen",
+      "items": [
+        { "key": "strategie", "title": "Strategie", "text": "Wir finden heraus, was Ihre Zielgruppe wirklich sehen will, und machen daraus einen Plan.", "visual": ["Zielgruppe", "Idee", "Kanal"] },
+        { "key": "content", "title": "Content", "text": "Reels, Karussells und Stories, die zu Ihrer Marke passen und im Feed auffallen.", "visual": ["Reel", "Karussell", "Story"] },
+        { "key": "wachstum", "title": "Wachstum", "text": "Wir messen, was funktioniert, und verbessern jeden Monat nach.", "visual": ["Monat 1", "Monat 2", "Monat 3"] }
+      ]
+    },
+    "about": {
+      "h3": "Was ist KIVORA?",
+      "text": "KIVORA ist eine junge Marketingagentur aus Dresden. Wir entwickeln Strategie, produzieren Content wie Reels, Karussells und Stories und messen, was davon wirkt. Für Marken und Unternehmen, die sichtbarer werden wollen."
+    },
+    "process": {
+      "h2": "So arbeiten wir",
+      "steps": [
+        { "title": "Kennenlernen", "text": "Ein Gespräch über Ihre Marke, Ihre Ziele und das, was bisher passiert ist." },
+        { "title": "Strategie", "text": "Wir legen fest, für wen, wo und mit welcher Idee Sie auftreten." },
+        { "title": "Produktion", "text": "Wir planen und produzieren den Content. Sie geben frei, bevor etwas online geht." },
+        { "title": "Auswerten und verbessern", "text": "Jeden Monat schauen wir auf die Zahlen und passen an, was nicht trägt." }
+      ]
+    },
+    "work": {
+      "h2": "Konzepte, die zeigen, wie wir denken",
+      "intro": "Wir sind neu. Deshalb zeigen wir keine erfundenen Kunden, sondern Konzepte für fiktive Marken.",
+      "all": "Alle Konzepte",
+      "cardLink": "Konzept ansehen",
+      "filterLabel": "Konzepte nach Branche filtern",
+      "filterAll": "Alle",
+      "filterStatus": "{n} Konzepte sichtbar",
+      "filterStatusOne": "1 Konzept sichtbar"
+    },
+    "founding": {
+      "h2": "Neu heißt: volle Aufmerksamkeit.",
+      "text": "Wir sind eine junge Agentur. Unsere ersten Kundinnen und Kunden arbeiten direkt mit den Gründern und gestalten unsere Abläufe mit.",
+      "points": ["Sie arbeiten direkt mit den Gründern, ohne Umwege", "Sie prägen mit, wie wir arbeiten"],
+      "label": "Gründungskunden"
+    },
+    "formats": {
+      "h2": "Was wir produzieren",
+      "intro": "Vier Formate, ein wiedererkennbarer Auftritt.",
+      "items": [
+        { "key": "reel", "title": "Reels", "text": "Kurze Videos, die in den ersten Sekunden halten.", "image": "reel-ringlicht-studio" },
+        { "key": "karussell", "title": "Karussells", "text": "Wissen und Angebote, Bild für Bild erzählt.", "image": "reel-lichtkurven" },
+        { "key": "story", "title": "Stories", "text": "Nähe im Alltag, mit Umfragen und Fragen.", "image": "reel-haende-smartphone" },
+        { "key": "markenauftritt", "title": "Markenauftritte", "text": "Ein Look, der in jedem Format wiedererkennbar ist.", "image": "reel-hochhaus-nacht" }
+      ],
+      "mock": { "storyPoll": "Ihr Morgenkaffee?", "pollA": "Schwarz", "pollB": "Mit Milch", "carouselCover": "5 Bohnen, kurz erklärt", "brandLine": "Ein Look für jedes Format" }
+    },
+    "faq": {
+      "h2": "Häufige Fragen",
+      "items": [
+        { "q": "Für wen arbeiten Sie?", "a": "Für Marken und Unternehmen, die mit Content und klarer Strategie sichtbarer werden wollen, vom lokalen Betrieb in Dresden bis zur jungen Marke im Onlinehandel." },
+        { "q": "Wie läuft der Start ab?", "a": "Zuerst ein kostenloses Gespräch. Danach bekommen Sie einen Vorschlag mit Zielen, Formaten und Aufwand. Wenn er passt, legen wir los." },
+        { "q": "Wie schnell sehen wir Ergebnisse?", "a": "Erste Inhalte sind meist nach wenigen Wochen online. Wie schnell Reichweite und Anfragen wachsen, hängt von Markt und Budget ab. Das messen wir jeden Monat, feste Zahlen sagen wir vorher nicht zu." },
+        { "q": "Was kostet die Zusammenarbeit?", "a": "Das hängt vom Umfang ab. Nach dem ersten Gespräch erhalten Sie ein klares Angebot mit festen Leistungen." },
+        { "q": "Arbeiten Sie auch mit kleinen Unternehmen?", "a": "Ja. Gerade für kleine Teams lohnt sich ein klarer Plan, weil jede Stunde zählt." }
+      ],
+      "more": "Ihre Frage ist nicht dabei? Schreiben Sie uns."
+    },
+    "ending": {
+      "h2": "Bereit, nach vorn zu gehen?",
+      "text": "Erzählen Sie uns von Ihrer Marke. Wir melden uns innerhalb von zwei Werktagen.",
+      "marquee": "Gespräch anfragen"
+    }
+  },
+  "leistungen": {
+    "intro": "Drei Dinge, die zusammengehören: eine klare Strategie, Content, der auffällt, und ein Blick auf die Zahlen, der zu besseren Entscheidungen führt.",
+    "services": [
+      { "key": "strategie", "title": "Strategie", "lead": "Bevor etwas produziert wird, klären wir, wen Sie erreichen wollen und womit.", "points": ["Zielgruppe und Wettbewerb verstehen", "Eine Leitidee für Ihre Kampagnen", "Kanäle und Redaktionsplan festlegen"], "concept": "atelier-mira" },
+      { "key": "content", "title": "Content", "lead": "Wir planen und produzieren Inhalte, die nach Ihrer Marke aussehen und im Feed nicht untergehen.", "points": ["Reels, Karussells und Stories", "Texte, Schnitt und Gestaltung aus einer Hand", "Freigabe durch Sie, bevor etwas online geht"], "concept": "nordlicht-cafe" },
+      { "key": "wachstum", "title": "Wachstum", "lead": "Wir schauen jeden Monat auf die Zahlen und ändern, was nicht trägt.", "points": ["Klare Ziele pro Kampagne", "Monatliche Auswertung in verständlicher Sprache", "Konkrete Vorschläge für den nächsten Monat"], "concept": "studio-wellenform" }
+    ],
+    "conceptLink": "Passendes Konzept ansehen",
+    "formatsH2": "Formate, die wir produzieren"
+  },
+  "arbeiten": {
+    "intro": "Wir sind neu. Deshalb zeigen wir keine erfundenen Kunden, sondern Konzepte für fiktive Marken: mit Idee, Formaten und den Zielen, an denen wir uns messen würden."
+  },
+  "case": {
+    "label": "Konzeptprojekt",
+    "note": "Fiktive Marke. Alle Zahlen sind Ziele des Konzepts, keine Ergebnisse.",
+    "challenge": "Herausforderung",
+    "idea": "Idee",
+    "formats": "Content-Formate",
+    "kpis": "Ziel-KPIs (Konzept)",
+    "kpiNote": "Ziel des Konzepts, kein Ergebnis.",
+    "service": "Passende Leistung",
+    "next": "Nächstes Konzept",
+    "back": "Alle Konzepte",
+    "ctaH2": "So etwas für Ihre Marke?",
+    "ctaText": "Erzählen Sie uns, wo Sie stehen. Wir denken gern mit."
+  },
+  "categories": [
+    { "key": "beauty", "label": "Beauty" },
+    { "key": "food", "label": "Food" },
+    { "key": "fashion", "label": "Fashion" },
+    { "key": "tech", "label": "Tech" },
+    { "key": "lokal", "label": "Lokale Betriebe" }
+  ],
+  "concepts": [
+    {
+      "slug": "nordlicht-cafe", "name": "Nordlicht Café", "category": "food", "categoryLabel": "Food", "idea": "Morgens um 7",
+      "seoTitle": "Nordlicht Café: Konzeptprojekt Food · KIVORA",
+      "seoDescription": "Konzeptprojekt für ein Café: Die Reel-Serie „Morgens um 7“ soll werktags vor 10 Uhr mehr Gäste bringen. Herausforderung, Idee, Formate, Ziel-KPIs.",
+      "teaser": "Eine Reel-Serie über den ersten Kaffee des Tages.",
+      "challenge": "Am Wochenende ist das Café voll, an Werktagen vor zehn Uhr bleiben die Tische leer. Wer morgens vorbeigeht, kennt das Café nur vom Samstag.",
+      "ideaText": "„Morgens um 7“ zeigt, was passiert, bevor die Stadt aufwacht: die erste Bohne in der Mühle, der erste Gast, das Licht auf der Theke. Die Clips sind kurz und ruhig und erscheinen jeden Werktag zur selben Zeit.",
+      "formats": [
+        { "type": "Reel-Serie", "text": "15 Sekunden pro Morgen, immer um 7 Uhr veröffentlicht." },
+        { "type": "Story-Umfrage", "text": "„Ihr Morgenkaffee?“ Die Antworten entscheiden das Angebot der Woche." },
+        { "type": "Karussell", "text": "„5 Bohnen, kurz erklärt“: Herkunft und Geschmack in fünf Bildern." }
+      ],
+      "kpi": { "value": "+30 %", "label": "Besuche werktags vor 10 Uhr" },
+      "image": "konzept-nordlicht-cafe", "alt": "Hände halten eine Tasse Cappuccino mit Latte Art, in blaues Licht getaucht.",
+      "service": "content"
+    },
+    {
+      "slug": "velura-skin", "name": "Velura Skin", "category": "beauty", "categoryLabel": "Beauty", "idea": "Ehrliche Haut",
+      "seoTitle": "Velura Skin: Konzeptprojekt Beauty · KIVORA",
+      "seoDescription": "Konzeptprojekt für eine neue Hautpflegemarke: „Ehrliche Haut“, 30 Tage echte Routinen ohne Filter. Herausforderung, Idee, Formate und Ziel-KPIs.",
+      "teaser": "30 Tage echte Routinen, ohne Filter.",
+      "challenge": "Ein neues Serum in einem Markt voller Versprechen. Niemand kennt die Marke, und perfekte Werbebilder glaubt kaum noch jemand.",
+      "ideaText": "„Ehrliche Haut“ begleitet echte Menschen 30 Tage lang bei ihrer Routine, ohne Filter und auch an schlechten Tagen. Die Marke selbst hält sich im Hintergrund.",
+      "formats": [
+        { "type": "UGC-Reels", "text": "Kurze Clips aus dem Badezimmer, gefilmt von den Teilnehmenden selbst." },
+        { "type": "Routine-Karussell", "text": "Schritt für Schritt: was wann aufgetragen wird und warum." },
+        { "type": "Live-Q&A", "text": "Einmal pro Woche Fragen an das Team hinter dem Produkt." }
+      ],
+      "kpi": { "value": "10.000", "label": "Profilbesuche in 30 Tagen" },
+      "image": "konzept-velura-skin", "alt": "Eine braune Pipettenflasche auf einem gedrechselten Sockel, Schatten von Blättern an der Wand.",
+      "service": "strategie"
+    },
+    {
+      "slug": "atelier-mira", "name": "Atelier Mira", "category": "fashion", "categoryLabel": "Fashion", "idea": "Ein Stück, fünf Looks",
+      "seoTitle": "Atelier Mira: Konzeptprojekt Fashion · KIVORA",
+      "seoDescription": "Konzeptprojekt für ein kleines Modelabel: „Ein Stück, fünf Looks“ zeigt ein Teil in fünf Stylings. Herausforderung, Idee, Formate und Ziel-KPIs.",
+      "teaser": "Ein Teil, fünf Stylings, ein klarer Stil.",
+      "challenge": "Ein kleines Label mit schönen Teilen, das im Feed aussieht wie alle anderen. Wer scrollt, kann die Marke nicht zuordnen.",
+      "ideaText": "„Ein Stück, fünf Looks“ nimmt jede Woche ein einziges Teil und stylt es fünfmal: fürs Büro, für den Abend, für den Sonntag. So wird die Handschrift des Labels sichtbar.",
+      "formats": [
+        { "type": "Lookbook-Karussell", "text": "Fünf Looks, fünf Bilder, immer im gleichen Rahmen." },
+        { "type": "Reel-Transitions", "text": "Ein Schnitt pro Look, im Takt der Musik." },
+        { "type": "Story-Abstimmung", "text": "Die Community wählt den Look der Woche." }
+      ],
+      "kpi": { "value": "> 5 %", "label": "Speicherrate pro Karussell" },
+      "image": "konzept-atelier-mira", "alt": "Eine Frau in dunklem Mantel geht über einen Zebrastreifen, Menschen im Hintergrund.",
+      "service": "strategie"
+    },
+    {
+      "slug": "kanto-bikes", "name": "Kanto Bikes", "category": "tech", "categoryLabel": "Tech", "idea": "Der Weg zur Arbeit",
+      "seoTitle": "Kanto Bikes: Konzeptprojekt Tech · KIVORA",
+      "seoDescription": "Konzeptprojekt für einen E-Bike-Start: „Der Weg zur Arbeit“ filmt Pendelstrecken bei Nacht und Morgengrauen. Idee, Formate und Ziel-KPIs.",
+      "teaser": "Pendelstrecken bei Nacht und Morgengrauen.",
+      "challenge": "Ein neues E-Bike in einem vollen Markt. Technische Daten allein überzeugen niemanden, der morgens im Stau steht.",
+      "ideaText": "„Der Weg zur Arbeit“ filmt echte Pendelstrecken aus der Fahrerperspektive, bei Nacht und im ersten Licht. Der Arbeitsweg soll sich wie der angenehmste Teil des Tages anfühlen.",
+      "formats": [
+        { "type": "POV-Reels", "text": "Jedes Reel zeigt eine Strecke in einer einzigen Fahrt, ohne Effekte." },
+        { "type": "Spec-Karussell", "text": "Akku, Gewicht und Reichweite, in Alltagssprache erklärt." },
+        { "type": "Creator-Kooperation", "text": "Pendlerinnen und Pendler aus der Region testen vier Wochen lang." }
+      ],
+      "kpi": { "value": "500", "label": "Anfragen für Probefahrten" },
+      "image": "konzept-kanto-bikes", "alt": "Eine Person fährt nachts Fahrrad, die Lichter der Stadt verschwimmen zu Streifen.",
+      "service": "content"
+    },
+    {
+      "slug": "studio-wellenform", "name": "Studio Wellenform", "category": "lokal", "categoryLabel": "Lokale Betriebe", "idea": "Woche 9",
+      "seoTitle": "Studio Wellenform: Konzeptprojekt Fitness · KIVORA",
+      "seoDescription": "Konzeptprojekt für ein Fitnessstudio: „Woche 9“ erzählt von Mitgliedern, die drangeblieben sind. Herausforderung, Idee, Formate und Ziel-KPIs.",
+      "teaser": "Geschichten von Mitgliedern, die drangeblieben sind.",
+      "challenge": "Viele neue Mitglieder kündigen nach zwei Monaten. Genau dann, wenn die erste Motivation weg ist und die Ergebnisse noch nicht sichtbar sind.",
+      "ideaText": "„Woche 9“ erzählt von Mitgliedern, die über diesen Punkt hinausgekommen sind. Die Geschichten zeigen auch Zweifel und verzichten auf Vorher-nachher-Bilder.",
+      "formats": [
+        { "type": "Story-Serie", "text": "Jede Woche eine Person, eine Frage, eine Antwort." },
+        { "type": "Reel „1 Übung, 3 Level“", "text": "Für Einsteiger, Fortgeschrittene und alle dazwischen." },
+        { "type": "Karussell-Trainingsplan", "text": "Ein Plan zum Speichern für die schwierigen Wochen." }
+      ],
+      "kpi": { "value": "−15 %", "label": "Kündigungen in den ersten drei Monaten" },
+      "image": "konzept-studio-wellenform", "alt": "Eine Hand greift im Fitnessstudio nach einer Hantel.",
+      "service": "wachstum"
+    }
+  ],
+  "wall": [
+    { "concept": "nordlicht-cafe", "format": "Reel", "line": "Morgens um 7", "image": "reel-cafe-latte-art", "alt": "Latte Art in einer Tasse, gehalten von zwei Händen." },
+    { "concept": "velura-skin", "format": "UGC-Reel", "line": "Tag 1 ohne Filter", "image": "reel-serum-flasche", "alt": "Eine Pipettenflasche auf einem Sockel." },
+    { "concept": "kanto-bikes", "format": "Spec-Karussell", "line": "Akku, Gewicht, Reichweite", "type": "text", "image": "reel-lichtkurven" },
+    { "concept": "atelier-mira", "format": "Lookbook-Karussell", "line": "Look 1 von 5", "image": "reel-mode-strasse", "alt": "Eine Frau im dunklen Mantel auf einem Zebrastreifen." },
+    { "concept": "studio-wellenform", "format": "Story-Serie", "line": "Woche 9", "image": "reel-fitness-hantel", "alt": "Eine Hand greift nach einer Hantel." },
+    { "concept": "nordlicht-cafe", "format": "Story-Umfrage", "line": "Ihr Morgenkaffee?", "image": "reel-haende-smartphone", "alt": "Zwei Hände halten ein Smartphone und fotografieren." },
+    { "concept": "kanto-bikes", "format": "POV-Reel", "line": "Nachtfahrt", "image": "reel-fahrrad-nacht", "alt": "Eine Person fährt nachts Fahrrad, Lichter verschwimmen." },
+    { "concept": "velura-skin", "format": "Live-Q&A", "line": "Fragen an das Team", "image": "reel-ringlicht-studio", "alt": "Ein leuchtendes Ringlicht in einem dunklen Raum." },
+    { "concept": "atelier-mira", "format": "Reel-Transition", "line": "Ein Stück, fünf Looks", "image": "reel-creator-gimbal", "alt": "Ein Mann filmt sich mit Smartphone und Gimbal vor Hochhäusern." },
+    { "concept": "nordlicht-cafe", "format": "Karussell", "line": "5 Bohnen, kurz erklärt", "type": "text", "image": "reel-lichtlinie" },
+    { "concept": "kanto-bikes", "format": "Creator-Kooperation", "line": "Der Weg zur Arbeit", "image": "reel-hochhaus-nacht", "alt": "Ein beleuchtetes Hochhaus bei Nacht." },
+    { "concept": "studio-wellenform", "format": "Reel", "line": "1 Übung, 3 Level", "image": "reel-kamera-monitor", "alt": "Ein Kameramonitor zeigt eine Aufnahme." }
+  ],
+  "ueberUns": {
+    "intro": "Wir haben KIVORA gegründet, weil viele gute Marken unter ihren Möglichkeiten bleiben. Oft fehlt einfach ein klarer Plan, wie sie gesehen werden.",
+    "storyH2": "Unsere Geschichte",
+    "storyPlaceholder": "[Platzhalter: Die Gründungsgeschichte folgt, sobald sie vom Team freigegeben ist.]",
+    "teamH2": "Das Team",
+    "teamNote": "Bewusst ohne Stockfotos: Hier stehen bald die echten Menschen hinter KIVORA.",
+    "team": [
+      { "initials": "K", "name": "[Platzhalter: Name]", "role": "[Platzhalter: Rolle] · Gründung" },
+      { "initials": "O", "name": "[Platzhalter: Name]", "role": "[Platzhalter: Rolle] · Gründung" }
+    ],
+    "valuesH2": "Woran wir uns halten",
+    "values": [
+      { "title": "Ehrlich bleiben", "text": "Wir zeigen, was wir können, und erfinden nichts dazu, auch auf dieser Website nicht." },
+      { "title": "Nachmessen", "text": "Jede Kampagne hat ein Ziel, und jeden Monat prüfen wir, ob wir es erreichen." },
+      { "title": "Nah dran", "text": "Kurze Wege, feste Ansprechpartner, keine Weiterleitung an Unbekannte." }
+    ]
+  },
+  "kontakt": {
+    "intro": "Erzählen Sie uns von Ihrer Marke. Wir melden uns innerhalb von zwei Werktagen mit einem Vorschlag für das erste Gespräch.",
+    "direct": "Lieber direkt?",
+    "formH2": "Ihre Anfrage",
+    "required": "Pflichtfeld",
+    "optional": "freiwillig",
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "company": "Unternehmen",
+      "website": "Website oder Instagram",
+      "topics": "Worum geht es?",
+      "message": "Ihre Nachricht",
+      "consent": "Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden.",
+      "consentLink": "Mehr in der Datenschutzerklärung."
+    },
+    "placeholders": { "email": "name@unternehmen.de", "website": "www.ihre-marke.de oder @ihremarke", "message": "Wo steht Ihre Marke, und was soll sich ändern?" },
+    "topics": ["Strategie", "Content", "Wachstum", "Noch unklar"],
+    "submit": "Anfrage senden",
+    "errors": {
+      "name": "Bitte geben Sie Ihren Namen ein.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "company": "Bitte nennen Sie Ihr Unternehmen.",
+      "website": "Das sieht nicht wie eine Webadresse oder ein @Profil aus.",
+      "topics": "Bitte wählen Sie mindestens ein Thema.",
+      "message": "Bitte schreiben Sie uns kurz, worum es geht (mindestens 20 Zeichen).",
+      "consent": "Bitte bestätigen Sie die Einwilligung.",
+      "summary": "Bitte prüfen Sie die markierten Felder."
+    },
+    "success": "Danke! Wir melden uns innerhalb von zwei Werktagen.",
+    "demo": "Demo: Es wurde nichts gesendet oder gespeichert.",
+    "again": "Neue Anfrage schreiben",
+    "noJs": "Ohne JavaScript öffnet „Anfrage senden“ Ihr E-Mail-Programm. Oder schreiben Sie uns direkt:",
+    "asideH2": "Was danach passiert",
+    "asideSteps": ["Wir lesen Ihre Anfrage und melden uns innerhalb von zwei Werktagen.", "Ein erstes Gespräch, kostenlos und ohne Verpflichtung.", "Danach bekommen Sie einen klaren Vorschlag."]
+  },
+  "legal": {
+    "placeholder": "[Platzhalter] Dieser Text kommt vom Unternehmen und wird vor dem Start eingefügt.",
+    "impressum": ["Angaben gemäß § 5 DDG", "[Platzhalter: Firmenname, Rechtsform]", "[Platzhalter: Anschrift] · Dresden", "E-Mail: hallo@kivora.example", "[Platzhalter: Vertretungsberechtigte Person, Registereintrag, USt-IdNr.]"],
+    "datenschutz": [
+      { "h2": "Kurz gesagt", "p": "Diese Website setzt keine Cookies, nutzt keine Analyse- oder Werbedienste und lädt keine Schriften, Skripte oder Bilder von fremden Servern. Deshalb gibt es auch keinen Cookie-Banner." },
+      { "h2": "sessionStorage", "p": "Die Seite merkt sich im sessionStorage Ihres Browsers nur, ob Sie das Laufband oder ein Video angehalten haben. Diese Angabe verlässt Ihr Gerät nicht und wird gelöscht, wenn Sie den Tab schließen." },
+      { "h2": "Kontaktformular", "p": "In dieser Demo wird nichts gesendet oder gespeichert. Ohne JavaScript öffnet das Formular Ihr eigenes E-Mail-Programm. Was Sie dort abschicken, erreicht uns als normale E-Mail." },
+      { "h2": "Vollständige Erklärung", "p": "[Platzhalter: Verantwortliche Stelle, Hosting, Rechte der Betroffenen. Der vollständige Text kommt vom Unternehmen.]" }
+    ]
+  },
+  "bildnachweise": {
+    "intro": "Alle Fotos und Videos stammen von Unsplash oder Pexels und sind für die kommerzielle Nutzung freigegeben. Wir nennen die Urheberinnen und Urheber trotzdem gern. Alle Bilder wurden für diese Website farblich an die Marke angepasst.",
+    "photosH2": "Fotos und Video",
+    "madeH2": "Aus eigener Produktion",
+    "made": [
+      "3D-Symbol in Glas und Metall, O-Ring und Lichtebenen: gerendert in Blender",
+      "Logo-Varianten, Format-Icons und Handy-Rahmen: gezeichnet und exportiert in Affinity",
+      "Farblooks für Fotos und Video, OG-Bild und Körnung: eigene Skripte",
+      "Schriften: Cal Sans und Inter, SIL Open Font License"
+    ],
+    "credits": [
+      { "what": "Latte Art (Nordlicht Café)", "author": "Caramel", "source": "Unsplash", "url": "https://unsplash.com/photos/OFdqt1ECako", "license": "Unsplash-Lizenz" },
+      { "what": "Pipettenflasche (Velura Skin)", "author": "Kadarius Seegars", "source": "Unsplash", "url": "https://unsplash.com/photos/Mxy5gokl8mE", "license": "Unsplash-Lizenz" },
+      { "what": "Zebrastreifen (Atelier Mira)", "author": "Polina Shirokova", "source": "Unsplash", "url": "https://unsplash.com/photos/IiawyjrLTqc", "license": "Unsplash-Lizenz" },
+      { "what": "Radfahrt bei Nacht (Kanto Bikes)", "author": "Atul Pandey", "source": "Unsplash", "url": "https://unsplash.com/photos/pCS5gimk5B8", "license": "Unsplash-Lizenz" },
+      { "what": "Hand an der Hantel (Studio Wellenform)", "author": "Alef Morais", "source": "Unsplash", "url": "https://unsplash.com/photos/ZqdZECdJlRk", "license": "Unsplash-Lizenz" },
+      { "what": "Hände mit Smartphone", "author": "charlesdeluvio", "source": "Unsplash", "url": "https://unsplash.com/photos/lkHNDf-oXTk", "license": "Unsplash-Lizenz" },
+      { "what": "Creator mit Gimbal", "author": "wilson montoya", "source": "Unsplash", "url": "https://unsplash.com/photos/HTXKn_dv8PE", "license": "Unsplash-Lizenz" },
+      { "what": "Ringlicht", "author": "Clevenider Petit", "source": "Unsplash", "url": "https://unsplash.com/photos/a55bIlD8ALw", "license": "Unsplash-Lizenz" },
+      { "what": "Hochhaus bei Nacht", "author": "Julian Gentile", "source": "Unsplash", "url": "https://unsplash.com/photos/-NsRIH1nAL8", "license": "Unsplash-Lizenz" },
+      { "what": "Kameramonitor", "author": "Taine Noble", "source": "Unsplash", "url": "https://unsplash.com/photos/B1aZL41ACkc", "license": "Unsplash-Lizenz" },
+      { "what": "Lichtlinie (Textur)", "author": "Joakim Honkasalo", "source": "Unsplash", "url": "https://unsplash.com/photos/ssvjJLB6wIw", "license": "Unsplash-Lizenz" },
+      { "what": "Lichtkurven (Textur)", "author": "Dima Solomin", "source": "Unsplash", "url": "https://unsplash.com/photos/lWFSNBQiI8g", "license": "Unsplash-Lizenz" },
+      { "what": "Video: Stadt bei Nacht filmen (O-Linse)", "author": "Paul Bill", "source": "Pexels", "url": "https://www.pexels.com/video/capturing-city-skyline-at-night-with-smartphone-36926172/", "license": "Pexels-Lizenz" }
+    ],
+    "licenseLinks": [
+      { "label": "Unsplash-Lizenz", "url": "https://unsplash.com/license" },
+      { "label": "Pexels-Lizenz", "url": "https://www.pexels.com/license/" }
+    ]
+  },
+  "notFound": {
+    "text": "Vielleicht hilft einer dieser Wege weiter.",
+    "home": "Zur Startseite"
+  }
+}

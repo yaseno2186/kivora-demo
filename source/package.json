@@ -1,0 +1,16 @@
+{
+  "name": "kivora-web",
+  "private": true,
+  "type": "module",
+  "description": "KIVORA concept website by Armsin. No build step needed to view dist/. Dev tools only for generating and verifying.",
+  "scripts": {
+    "build": "node tools/build.mjs && node tools/build.mjs --launch",
+    "serve": "node tools/serve.mjs dist 4600",
+    "verify": "node tools/verify/run-all.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.2",
+    "lighthouse": "12.2.1",
+    "playwright": "1.49.1"
+  }
+}

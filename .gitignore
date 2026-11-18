@@ -1,0 +1,6 @@
+source/node_modules/
+source/dist/
+source/dist-launch/
+source/verify/
+.DS_Store
+Thumbs.db

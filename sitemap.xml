@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://kivora.example/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/"/></url>
+  <url><loc>https://kivora.example/leistungen/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/leistungen/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/leistungen/"/></url>
+  <url><loc>https://kivora.example/arbeiten/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/arbeiten/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/arbeiten/"/></url>
+  <url><loc>https://kivora.example/arbeiten/nordlicht-cafe/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/arbeiten/nordlicht-cafe/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/arbeiten/nordlicht-cafe/"/></url>
+  <url><loc>https://kivora.example/arbeiten/velura-skin/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/arbeiten/velura-skin/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/arbeiten/velura-skin/"/></url>
+  <url><loc>https://kivora.example/arbeiten/atelier-mira/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/arbeiten/atelier-mira/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/arbeiten/atelier-mira/"/></url>
+  <url><loc>https://kivora.example/arbeiten/kanto-bikes/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/arbeiten/kanto-bikes/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/arbeiten/kanto-bikes/"/></url>
+  <url><loc>https://kivora.example/arbeiten/studio-wellenform/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/arbeiten/studio-wellenform/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/arbeiten/studio-wellenform/"/></url>
+  <url><loc>https://kivora.example/ueber-uns/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/ueber-uns/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/ueber-uns/"/></url>
+  <url><loc>https://kivora.example/kontakt/</loc><xhtml:link rel="alternate" hreflang="de" href="https://kivora.example/kontakt/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://kivora.example/kontakt/"/></url>
+</urlset>
