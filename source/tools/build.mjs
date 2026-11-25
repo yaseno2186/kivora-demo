@@ -132,7 +132,7 @@ function footer({ sticky = true } = {}) {
     <div><p class="site-foot__h">${esc(S.footerContactLabel)}</p><ul><li><a href="mailto:${S.email}">${S.email}</a></li><li>${esc(S.city)}, ${esc(S.region)}</li><li class="site-foot__muted">${esc(S.socialPlaceholder)}</li></ul></div>
     <nav aria-label="${esc(S.footerLegalLabel)}"><p class="site-foot__h">${esc(S.footerLegalLabel)}</p><ul><li><a href="${R}impressum/">Impressum</a></li><li><a href="${R}datenschutz/">Datenschutz</a></li><li><a href="${R}bildnachweise/">Bildnachweise</a></li></ul></nav>
   </div>
-  <p class="site-foot__note">${esc(S.demoNote)}</p>
+  <p class="site-foot__note">${esc(S.demoNote)} · <a href="https://armsin.de/">Webdesign aus Freiberg: armsin.de</a></p>
 </footer>
 ${sticky ? `<aside class="sticky-cta" aria-label="Schnellkontakt" data-sticky-cta><a class="btn btn--primary" href="${R}kontakt/">${esc(S.cta)}</a></aside>` : ""}`;
 }
